@@ -1,15 +1,14 @@
-# Data Structures Project 
+## Octree: A spatial data-structure to store point-cloud representations
 
-## Primary Data Structure
+An [Octree](https://en.wikipedia.org/wiki/Octree) is a three-dimensional analogue of the Quadtree, the latter can be explained more easily. A quadtree is a spatial data structure that stores region information in quadrants formed by recursively subdividing square regions. A point can thus be approximated by a quadrant small enough to adequately enclose the point within reasonable bounds on accuracy. Our team created a presentation on the importance of such classes of data-structures and the octree which can be found [here](https://www.youtube.com/watch?v=ZysTeC49ldw)
 
-The primary data structure that this project uses is the **Octree**.
+![Quadtree](https://upload.wikimedia.org/wikipedia/commons/b/b5/StructureQuadTree.png)
+*Fig. 1 Quadtree*
 
-## Problem
+Here, we create an Octree using similar principles and use it store the point cloud information of a highly detailed model [here](https://www.youtube.com/watch?v=9rGK7Gmiuoo).
 
-The problem that this project tackles is that it reduces the time and space complexity of rendering objects in 3D using the Octree. 
+This data structure reduces the time and space complexity of rendering objects in 3D and allows faster spatial operations such as Nearest-Neighbor (NN) search and Frustum Culling.
 
-An Octree is a special type of structure used to store spatial data. It reduces the time and space complexity of 3D surface rendering by accessing only sufficient amount of data at a particular level of detail.
+####  Running the code
+The application may be run by running the python code using an ".obj" file. This will extract the points from the model and remove surfaces, surface normals and color and textural data. The set of points extracted can then be used in the blenderpy script at the end of the code.
 
-## Application
-
-The application of this project is that it takes a point cloud data of a 3D object and it converts its data into an octree data and produces a Wavefront Object (.obj) file that can be rendered by any 3D rendering platform. 
