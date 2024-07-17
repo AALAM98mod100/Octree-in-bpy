@@ -5,7 +5,7 @@ An [Octree](https://en.wikipedia.org/wiki/Octree) is a three-dimensional analogu
 ![Quadtree](https://upload.wikimedia.org/wikipedia/commons/b/b5/StructureQuadTree.png)
 *Fig. 1 Quadtree*
 
-Here, we create an Octree using similar principles and use it store the point cloud information of a highly detailed model [here](https://www.youtube.com/watch?v=9rGK7Gmiuoo).
+Here, we create an Octree using similar principles and use it store the point cloud information of a highly detailed model [here](https://youtu.be/TvX9Me-Ibkw).
 
 This data structure reduces the time and space complexity of rendering objects in 3D and allows faster spatial operations such as Nearest-Neighbor (NN) search and Frustum Culling.
 
